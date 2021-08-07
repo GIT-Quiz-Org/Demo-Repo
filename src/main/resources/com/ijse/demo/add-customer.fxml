@@ -2,14 +2,14 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="239.0" prefWidth="202.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.ijse.demo.controller.CustomerController">
+<VBox alignment="CENTER" prefHeight="284.0" prefWidth="202.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.demo.controller.CustomerController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Button fx:id="btnItemSection" mnemonicParsing="false" onAction="#btnItemSectionOnAction" text="Item Section" />
    <TextField fx:id="txtId" promptText="ID" />
 
 

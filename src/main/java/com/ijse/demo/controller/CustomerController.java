@@ -13,6 +13,7 @@ package com.ijse.demo.controller;
 import com.ijse.demo.model.Customer;
 import com.ijse.demo.service.CustomerService;
 import javafx.event.ActionEvent;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -20,6 +21,7 @@ public class CustomerController {
     public TextField txtId;
     public TextField txtName;
     public Button btnSave;
+    public Button btnItemSection;
 
 
     public void onBtnSaveAction(ActionEvent actionEvent) {
@@ -27,5 +29,11 @@ public class CustomerController {
 
         cs.saveCustomer(new Customer(txtId.getText(), txtName.getText()));
 
+    }
+
+    public void btnItemSectionOnAction(ActionEvent actionEvent) {
+
+        //
+        // switch to the add item section
     }
 }
